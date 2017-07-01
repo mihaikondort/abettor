@@ -274,7 +274,8 @@ placeOrders <-
     token <- Sys.getenv('token')
 
     headers <- list(
-      'Accept' = 'application/json', 'X-Application' = product, 'X-Authentication' = token, 'Content-Type' = 'application/json'
+      'Accept' = 'application/json', 'X-Application' = product, 'X-Authentication' = token, 'Content-Type' = 'application/json',
+      'Expect' = ''
     )
 
     placeOrders <-
