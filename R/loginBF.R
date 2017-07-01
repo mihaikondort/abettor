@@ -75,7 +75,8 @@ loginBF <-
       paste("username=",username,"&password=",password,sep = "")
 
     headersLogin <-
-      list('Accept' = 'application/json', 'X-Application' = applicationKey)
+      list('Accept' = 'application/json', 'X-Application' = applicationKey,
+      'Expect' = '')
 
     loginReturn =  tryCatch(
       RCurl::postForm(
